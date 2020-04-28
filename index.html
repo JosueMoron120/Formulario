@@ -6,56 +6,39 @@
     <title>Clase 2</title>
     <link rel="stylesheet" href="/Css/estilos.css">
 <body>
-    <header>Informacion del Producto</header>
+    <header> </header>
     <nav></nav>
     <section>
         <section> 
-            <form action="" method="get">
+            <form action="home.html" method="GET"> <!-- method = "post", get = show data, post = not show data-->
+                <label for="a">INFORMACION SOBRE EL PRODUCTO</label> <br><br>
                 <fieldset>
-                    <legend>DATOS DEL PRODUCTO</legend>
-                <label for="a">Nombre:</label><br>
-                <input type="text" id="caja1" class="cajita" name="nombre" placeholder="Nombre" ><br>
-                <label for="a">Descripcion:</label><br>
-                <textarea name="" id="" cols="30" rows="10"></textarea><br>
-                <label for="a">Foto:</label><br>
-                <input type="file" name="archivo" id="archivo">
-                <input type="button" value="Enviar"><br>
-                <input type="radio" id="caja5" class="cajita" name="sexo">Añadir Contador de Visitas<br>
-
-            </fieldset>
-            <legend>DATOS ECONOMICOS</legend>
-            <label for="a">Precio:</label>
-            <input type="number" id="caja1" class="cajita" name="Precio" placeholder="precio" >
-            <label for="a">$</label>
-            <label for="a">Impuesto:</label>
-            <select name="Impuesto" id="Impuesto">
-                <option value="0">Seleccione Impuesto</option>
-                <option value="1">4%</option>
-                <option value="2">7%</option>
-                <option value="3">16%</option>
-                <option value="4">25%</option><br>
-    
-                    <label for="a">PROMOCION:</label>
-                    <input type="checkbox" id="caja7" class="cajita">Niguno<br>
-                    <input type="checkbox" id="caja7" class="cajita">Transporte Gratuito<br>
-                    <input type="checkbox" id="caja7" class="cajita">Descuento 5%<br>
-                    
-                    </select><br>
+                    <legend>Datos Básicos</legend>
+                <br><label for="a">Nombre</label> <br>
+                <input type="text" id = "caja1" class = "cajita" name = "nombres" placeholder="NombreProducto" required><br><br>
+                <label for="a">Descripcion:</label> <br>
+                <textarea name="area" id="" cols="30" rows="10"></textarea><br>
+                <br> Foto: <input type="file" name="archivo" id="archivo"><br>
+                <br><input type="checkbox" id = "caja7" class = "cajita">Añadir contador de visitas<br>
                 </fieldset>
-            </fieldset>
-       
+
+                <fieldset>
+                    <legend>Datos Económicos</legend> <br>
+                    Precio  <input type="number" id = "caja2" class = "cajita" name = "numero" placeholder="Precio" required>€      
+                    Impuestos<select name="impuesto" id="impuesto">
+                        <option value="0">Seleccionar</option>
+                        <option value="1">4%</option>
+                        <option value="2">7%</option>
+                        <option value="3">16%</option>
+                        <option value="4">25%</option>
+                    </select> <br>
+                    <br>Promoción: <br>
+                    <input type="radio" id = "caja1" class = "cajita">Ninguno<br>
+                    <input type="radio" id = "caja2" class = "cajita">Transporte gratuito<br>
+                    <input type="radio" id = "caja3" class = "cajita">Descuento 5%<br><br>
+                </fieldset>
               
-            </form>
-        </section>
-        <aside>
-        
-           
-        </aside>
-        <section>
-            
-        </section>
     </section>
     <footer></footer>
-    
 </body>
 </html>
